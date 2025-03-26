@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+
+  <link rel="stylesheet" href="Halo%20Survey_files/styles.css">
+</head>
+  <body>
+    <h1 id="title">What Are Your Favorite Halo 
+      Game's?
+      <hr>
+      <img src="Halo%20Survey_files/halo-icon-27.png" alt="master-cheif">
+    <p id="description">Please tell us about yourself 
+      </p><form id="survey-form">
+
+        <div class="form-group"><label id="name-label">Name
+          <input placeholder="name" required="" id="name" type="text"></label></div>
+        <div class="form-group"><label id="email-label">Email
+          <input placeholder="email" required="" id="email" type="email"></label></div>
+        Age<div class="form-group"><label id="number-label">
+          <input placeholder="age" id="number" type="number" min="13" max="100"></label></div>
+        
+        Gender<div class="form-group"><select id="dropdown">
+          <option selected="selected">select one</option>
+          <option>male</option>
+          <option>female</option>
+          <option>other</option>
+        </select></div>
+
+        Pronoun<div class="pronoun"><input type="radio" value="1" name="a">He
+        <input type="radio" value="2" name="a">She
+        <input type="radio" value="3" name="a">They/Them 
+        </div>
+        <hr class="middle">
+        <img src="Halo%20Survey_files/116203-game-halo-free-hq-image.png" alt="death">
+
+        Games Played<div class="games">
+          <div><input type="checkbox" value="1">Halo: Combat Evolved</div>
+         <div><input type="checkbox" value="2">Halo 2</div>
+         <div><input type="checkbox" value="3">Halo 3</div>
+         <div><input type="checkbox" value="4">Halo Wars</div>
+         <div><input type="checkbox" value="5">Halo 2600</div>
+         <div><input type="checkbox" value="6">Halo: Reach</div>
+         <div><input type="checkbox" value="7">Halo: Combat Evolved Anniversary</div>
+         <div><input type="checkbox" value="8">Halo 4</div>
+         <div><input type="checkbox" value="9">Halo: Spartan Assault</div>
+         <div><input type="checkbox" value="10">Halo: The Master Cheif Collection</div>
+         <div><input type="checkbox" value="11">Halo: Spartan Strike</div>
+         <div><input type="checkbox" value="12">Halo 5: Guardians</div>
+         <div><input type="checkbox" value="13">Halo Wars 2</div>
+         <div><input type="checkbox" value="14">Halo Wars 2: Awakening The Nighmare</div>
+         <div><input type="checkbox" value="15">Halo: Fire Team Raven</div>
+         <div><input type="checkbox" value="16">Halo 2:Anniversary</div>
+         <div><input type="checkbox" value="17">Halo Infinite Multiplayer</div>
+         <div><input type="checkbox" value="18">Halo Infinite</div>
+        </div>
+        <hr class="lower">
+
+        <div class="form-group">Please let us know which is your favorite and why<textarea placeholder="What's your favorite and why?" rows="10" cols="80"></textarea></div>
+        
+
+        <button id="submit">Submit</button>
+      </form>
+    <p></p>
+  </h1>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
